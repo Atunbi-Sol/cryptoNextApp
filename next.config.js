@@ -3,8 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
 
   images: {
-    domains: ["static.coinstats.app"]
-  }
+    domains: ["static.coinstats.app"],
+  },
 };
 
-module.exports = nextConfig
+module.exports = nextConfig;

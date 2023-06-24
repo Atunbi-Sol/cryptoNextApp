@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Damilare from "./CryptoList";
+import Damilare from "./cryptoList";
 
 const Hero = () => {
   return (

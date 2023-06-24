@@ -31,17 +31,17 @@ const CryptoList = ({ coins }) => (
             </tr>
           </thead>
           <tbody>
-            {coins.map((coin, i) => {
+            {coins?.map((coin, i) => {
               return (
                 <tr>
                   <td>{i + 1}</td>
                   <td>{coin.symbol}</td>
                   <td style={{ display: "flex", alignItems: "center", gap: "5px" }}>
-                    <Image src={coin.icon} width={30} height={30} />
+                    <Image src={coin.icon} width={25} height={25} alt={coin.name} />
                     {coin.symbol}
                   </td>
                   <td>
-                    <Link href={`/${coin.id}`}>{coin.name}</Link>
+                    <Link href={"/" + i}>{coin.name}</Link>
                   </td>
                   <td>${formatNumbers(coin.price.toFixed(2))}</td>
                   <td className={checkPrice(coin.priceChange1d)}>{coin.priceChange1d}</td>

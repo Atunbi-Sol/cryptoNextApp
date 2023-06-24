@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Layout from "@/components/Layout";
-import Hero from "./Hero";
-import CryptoList from "./CryptoList";
+import Hero from "./hero";
+import CryptoList from "./cryptoList";
+import Loader from "./Loader";
 
 export default function Home() {
   const [pagerReady, setPagerReady] = useState(false);
@@ -31,7 +32,7 @@ export default function Home() {
     <main>
       <Layout>
         <Hero />
-        {loading ? <div>Loading.....Please wait while we fetch the data</div> : <CryptoList coins={coins} />}
+        {loading ? <Loader /> : <CryptoList coins={coins} />}
       </Layout>
     </main>
   ) : (
