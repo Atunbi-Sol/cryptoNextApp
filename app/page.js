@@ -18,7 +18,7 @@ export default async function COINS() {
       // }
       // console.log(res.data);
 
-      await sleep(3);
+      await sleep(1);
 
       return res.data.coins;
     })
@@ -29,7 +29,7 @@ export default async function COINS() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Hero />
       <CryptoList coins={coins} />
       <Footer />

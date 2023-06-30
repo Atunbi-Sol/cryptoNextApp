@@ -1,6 +1,9 @@
+import Layout from "./layout";
+
 const About = () => {
   return (
     <section className="container">
+      {/* <Layout> */}
       <h1>About CryptoX</h1>
       <p>
         Cryptocurrencies have gained popularity because they offer several advantages over traditional fiat currencies, such as lower
@@ -11,6 +14,7 @@ const About = () => {
         of units of currency and verify the transfer of funds. Cryptocurrencies are decentralized and operate independently of central
         banks or governments.
       </p>
+      {/* </Layout> */}
     </section>
   );
 };
